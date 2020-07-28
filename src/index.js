@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import CardList from './CardList'
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
+import { issApi } from './issApi';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <React.StrictMode>
+      <CardList issApi={issApi} />
+    </React.StrictMode>,
   document.getElementById('root')
 );
 
